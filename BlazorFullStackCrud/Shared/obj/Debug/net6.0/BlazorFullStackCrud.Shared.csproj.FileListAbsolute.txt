@@ -1,0 +1,12 @@
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/bin/Debug/net6.0/BlazorFullStackCrud.Shared.deps.json
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/bin/Debug/net6.0/BlazorFullStackCrud.Shared.dll
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/bin/Debug/net6.0/BlazorFullStackCrud.Shared.pdb
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.csproj.AssemblyReference.cache
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.AssemblyInfoInputs.cache
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.AssemblyInfo.cs
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.csproj.CoreCompileInputs.cache
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.dll
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/refint/BlazorFullStackCrud.Shared.dll
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/BlazorFullStackCrud.Shared.pdb
+/Users/iqbalpermana/Documents/BlazorFullStackCrud/BlazorFullStackCrud/Shared/obj/Debug/net6.0/ref/BlazorFullStackCrud.Shared.dll
