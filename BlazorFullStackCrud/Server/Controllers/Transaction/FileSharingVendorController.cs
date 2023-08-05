@@ -57,6 +57,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.Name = formData.Name;
             dbData.Directory = formData.Directory;
             dbData.IsShow = formData.IsShow;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

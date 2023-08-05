@@ -11,8 +11,9 @@ namespace BlazorFullStackCrud.Shared
         
         public int HspTypeId { get; set; }
         public string? Name { get; set; } = string.Empty;
-
         public byte? IsLockEdit { get; set; }
+
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

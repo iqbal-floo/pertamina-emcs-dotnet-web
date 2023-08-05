@@ -11,7 +11,7 @@ namespace BlazorFullStackCrud.Shared
         
         public int VendorId { get; set; }
         public string? VendorName { get; set; } = string.Empty;
-        public double LatestPrice { get; set; }
+        public decimal? LatestPrice { get; set; }
         public DateOnly? QuotationDate { get; set; } 
 
         public string? Notes { get; set; } = string.Empty;

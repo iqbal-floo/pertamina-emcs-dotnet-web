@@ -39,6 +39,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<HsVendor>>> CreateData(HsVendor formData)
         {
+            formData.MaterialCategory = null;
             _context.HsVendors.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -61,6 +62,8 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.MaterialPrice = formData.MaterialPrice;
             dbData.MaterialQuotationDate = formData.MaterialQuotationDate;
             dbData.MaterialBrand = formData.MaterialBrand;
+            dbData.Tkdn = formData.Tkdn;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

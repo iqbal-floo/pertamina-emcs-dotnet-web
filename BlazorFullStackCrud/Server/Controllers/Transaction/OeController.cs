@@ -39,6 +39,10 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<Oe>>> CreateData(Oe formData)
         {
+            formData.City = null;
+            formData.BusinessUnit = null;
+            formData.OeJobsType = null;
+
             _context.Oes.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -79,6 +83,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.OeStatus = formData.OeStatus;
             dbData.OeStatusValidation = formData.OeStatusValidation;
             dbData.RiskAndProfit = formData.RiskAndProfit;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

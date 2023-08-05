@@ -56,6 +56,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.Name = formData.Name;
             dbData.IsLockEdit = formData.IsLockEdit;
             dbData.IsPublish = formData.IsPublish;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

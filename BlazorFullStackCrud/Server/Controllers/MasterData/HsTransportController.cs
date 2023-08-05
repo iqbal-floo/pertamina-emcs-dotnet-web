@@ -59,6 +59,8 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.Destination = formData.Destination;
             dbData.Uom = formData.Uom;
             dbData.Price = formData.Price;
+            dbData.Tkdn = formData.Tkdn;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

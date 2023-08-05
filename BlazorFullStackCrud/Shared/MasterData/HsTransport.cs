@@ -14,8 +14,10 @@ namespace BlazorFullStackCrud.Shared
         public string? Origin { get; set; } = string.Empty;
         public string? Destination { get; set; } = string.Empty;
         public string? Uom { get; set; } = string.Empty;
-        public double? Price { get; set; }
+        public decimal? Price { get; set; }
+        public double? Tkdn { get; set; } = 0;
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

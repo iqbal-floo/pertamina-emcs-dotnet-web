@@ -39,6 +39,8 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<HsVendorQuot>>> CreateData(HsVendorQuot formData)
         {
+            formData.HsVendor = null;
+            formData.TrFile = null;
             _context.HsVendorQuots.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -59,6 +61,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.QuotDate = formData.QuotDate;
             dbData.HsVendorId = formData.HsVendorId;
             dbData.FileId = formData.FileId;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

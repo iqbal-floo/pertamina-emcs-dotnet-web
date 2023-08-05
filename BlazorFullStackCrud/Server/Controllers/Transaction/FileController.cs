@@ -58,6 +58,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.FileDirectory = formData.FileDirectory;
             dbData.FileRelationTable = formData.FileRelationTable;
             dbData.FileDate = formData.FileDate;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

@@ -11,13 +11,16 @@ namespace BlazorFullStackCrud.Shared
         
         public int OeHspId { get; set; }
         public int? OeHspTypeId { get; set; }
+        public OeHspType? OeHspType { get; set; }
         public int? HspTypeId { get; set; }
+        public HspType? HspType { get; set; }
         public int? HspId { get; set; }
+        public Hsp? Hsp { get; set; }
         public string? ItemHsp { get; set; } = string.Empty;
         public double? Volume { get; set; }
         public string? PriceUom { get; set; } = string.Empty;
-        public double? PriceMaterial { get; set; }
-        public double? PriceService { get; set; }
+        public decimal? PriceMaterial { get; set; }
+        public decimal? PriceService { get; set; }
         
         public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }

@@ -12,9 +12,11 @@ namespace BlazorFullStackCrud.Shared
         public int HsUpahId { get; set; }
         public string? Description { get; set; } = string.Empty;
         public string? Uom { get; set; } = string.Empty;
-        public double? Price { get; set; }
+        public decimal? Price { get; set; }
         public string? Reference { get; set; } = string.Empty;
+        public double? Tkdn { get; set; } = 0;
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

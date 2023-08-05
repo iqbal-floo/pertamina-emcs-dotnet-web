@@ -11,9 +11,12 @@ namespace BlazorFullStackCrud.Shared
         
         public int HsNonVendorCityId { get; set; }
         public int HsNonVendorId { get; set; }
+        public HsNonVendor? HsNonVendor { get; set; }
         public int CityId { get; set; }
-        public double? Price { get; set; }
+        public City? City { get; set; }
+        public decimal? Price { get; set; }
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

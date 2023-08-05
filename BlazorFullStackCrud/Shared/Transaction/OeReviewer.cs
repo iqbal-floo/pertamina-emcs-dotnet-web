@@ -11,6 +11,7 @@ namespace BlazorFullStackCrud.Shared
         
         public int OeReviewerId { get; set; }
         public int? OeId { get; set; }
+        public Oe? Oe { get; set; }
         public int? ReviewerUserId { get; set; }
         public byte? ReviewStatus { get; set; }
         public DateTime? ReviewDate { get; set; }

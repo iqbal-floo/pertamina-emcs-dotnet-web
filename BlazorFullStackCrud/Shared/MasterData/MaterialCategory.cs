@@ -12,6 +12,7 @@ namespace BlazorFullStackCrud.Shared
         public int MaterialCategoryId { get; set; }
         public string? MaterialCategoryName { get; set; } = string.Empty;
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

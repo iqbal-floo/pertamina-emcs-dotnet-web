@@ -11,9 +11,10 @@ namespace BlazorFullStackCrud.Shared
         
         public int HspId { get; set; }
         public int HspTypeId { get; set; }
+        public HspType? HspType { get; set; }
         public string? HspItem { get; set; } = string.Empty;
         public string? HspUom { get; set; } = string.Empty;
-        public double? RiskAndProfit { get; set; }
+        public decimal? RiskAndProfit { get; set; }
 
         public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }

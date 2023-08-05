@@ -11,14 +11,16 @@ namespace BlazorFullStackCrud.Shared
         
         public int HspItemId { get; set; }
         public int HspId { get; set; }
+        public Hsp? Hsp { get; set; }
         public int HsId { get; set; }
         public string? TableRef { get; set; } = string.Empty;
         public double? Volume { get; set; }
         public byte? IsAllowEdit{ get; set; }
         public byte? EnableRiskAndProfit{ get; set; }
-        public double? RiskAndProfit{ get; set; }
+        public decimal? RiskAndProfit{ get; set; }
         public int? Sort{ get; set; }
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

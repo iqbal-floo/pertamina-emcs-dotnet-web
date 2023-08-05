@@ -49,6 +49,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<List<BusinessUnit>>> UpdateData(BusinessUnit formData, int id)
         {
+            
             var dbData = await _context.BusinessUnits
                 .FirstOrDefaultAsync(sh => sh.BusinessUnitId == id);
             if (dbData == null)

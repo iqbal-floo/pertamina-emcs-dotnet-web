@@ -11,6 +11,7 @@ namespace BlazorFullStackCrud.Shared
         
         public int OeChartConfigId { get; set; }
         public int? OeHspId { get; set; }
+        public OeHsp? OeHsp { get; set; }
         public DateTime? StartDate{ get; set; }
         public int? Predecessor { get; set; }
         public double? PercentageCompletion { get; set; }

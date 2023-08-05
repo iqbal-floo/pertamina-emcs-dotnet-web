@@ -14,8 +14,12 @@ namespace BlazorFullStackCrud.Shared
         public double? QuotPrice { get; set; }
         public DateOnly? QuotDate { get; set; }
         public int HsVendorId { get; set; }
+        public HsVendor? HsVendor { get; set; }
         public int FileId { get; set; }
+        public TrFile? TrFile { get; set; }
+        public double? Tkdn { get; set; } = 0;
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

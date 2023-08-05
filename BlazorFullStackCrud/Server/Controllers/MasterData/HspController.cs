@@ -38,6 +38,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<Hsp>>> CreateData(Hsp formData)
         {
+            formData.HspType = null;
             _context.Hsps.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -57,6 +58,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.HspItem = formData.HspItem;
             dbData.HspUom = formData.HspUom;
             dbData.RiskAndProfit = formData.RiskAndProfit;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

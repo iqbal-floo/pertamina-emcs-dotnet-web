@@ -56,6 +56,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.SettingId = formData.SettingId;
             dbData.SettingName = formData.SettingName;
             dbData.ValidDate = formData.ValidDate;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

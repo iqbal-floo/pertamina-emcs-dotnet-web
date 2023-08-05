@@ -57,6 +57,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.Percentage = formData.Percentage;
             dbData.MinimalThreshold = formData.MinimalThreshold;
             dbData.MaximalThreshold = formData.MaximalThreshold;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

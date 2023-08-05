@@ -57,6 +57,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.VendorName = formData.VendorName;
             dbData.LatestPrice = formData.LatestPrice;
             dbData.QuotationDate = formData.QuotationDate;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

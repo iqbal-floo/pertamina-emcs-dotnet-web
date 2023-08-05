@@ -11,6 +11,7 @@ namespace BlazorFullStackCrud.Shared
         
         public int MaterialRequestId { get; set; }
         public int? MaterialCategoryId { get; set; }
+        public MaterialCategory? MaterialCategory { get; set; }
         public string? Name { get; set; } = string.Empty;
         public string? Specification { get; set; } = string.Empty;
         public string? Unit { get; set; } = string.Empty;

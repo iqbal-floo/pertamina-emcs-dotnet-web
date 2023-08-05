@@ -39,6 +39,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<OeChartConfig>>> CreateData(OeChartConfig formData)
         {
+            formData.OeHsp = null;
             _context.OeChartConfigs.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -59,6 +60,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.Predecessor = formData.Predecessor;
             dbData.PercentageCompletion = formData.PercentageCompletion;
             dbData.IsOnCriticalPath = formData.IsOnCriticalPath;
+            dbData.Notes = formData.Notes ;
 
             await _context.SaveChangesAsync();
 

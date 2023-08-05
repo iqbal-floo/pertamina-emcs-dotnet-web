@@ -14,6 +14,7 @@ namespace BlazorFullStackCrud.Shared
         public int MinimalThreshold { get; set; }
         public int MaximalThreshold { get; set; }
 
+        public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string? CreatedBy { get; set; } = string.Empty;

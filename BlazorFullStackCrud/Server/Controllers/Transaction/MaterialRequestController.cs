@@ -39,6 +39,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<MaterialRequest>>> CreateData(MaterialRequest formData)
         {
+            formData.MaterialCategory = null;
             _context.MaterialRequests.Add(formData);
             await _context.SaveChangesAsync();
 

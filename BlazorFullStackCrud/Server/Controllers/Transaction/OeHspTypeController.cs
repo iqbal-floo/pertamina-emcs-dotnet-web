@@ -39,6 +39,7 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<OeHspType>>> CreateData(OeHspType formData)
         {
+            formData.Oe = null;
             _context.OeHspTypes.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -58,6 +59,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.JobsName = formData.JobsName;
             dbData.PriceMaterial = formData.PriceMaterial;
             dbData.PriceService = formData.PriceService;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

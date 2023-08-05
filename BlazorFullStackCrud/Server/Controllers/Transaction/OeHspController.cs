@@ -39,6 +39,10 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<OeHsp>>> CreateData(OeHsp formData)
         {
+            formData.OeHspType = null;
+            formData.HspType = null;
+            formData.Hsp = null;
+
             _context.OeHsps.Add(formData);
             await _context.SaveChangesAsync();
 

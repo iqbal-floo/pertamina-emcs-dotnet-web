@@ -39,6 +39,8 @@ namespace BlazorFullStackCrud.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<List<HsNonVendorCity>>> CreateData(HsNonVendorCity formData)
         {
+            formData.HsNonVendor = null;
+            formData.City = null;
             _context.HsNonVendorCities.Add(formData);
             await _context.SaveChangesAsync();
 
@@ -57,6 +59,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.HsNonVendorId = formData.HsNonVendorId;
             dbData.CityId = formData.CityId;
             dbData.Price = formData.Price;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 

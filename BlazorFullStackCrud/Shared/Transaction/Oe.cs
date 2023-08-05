@@ -12,10 +12,13 @@ namespace BlazorFullStackCrud.Shared
         public int OeId { get; set; }
         public string? OeTitle { get; set; } = string.Empty;
         public int? CityId { get; set; }
+        public City? City { get; set; }
         public int? BusinessUnitId { get; set; }
-        public string? MataAnggaran { get; set; } = string.Empty;
+        public BusinessUnit? BusinessUnit { get; set; }
+        public string? CostCenter { get; set; } = string.Empty;
         public string? OeType { get; set; } = string.Empty;
         public int? OeJobsTypeId { get; set; }
+        public OeJobsType? OeJobsType { get; set; }
         public string? OeWo { get; set; } = string.Empty;
         public int? OeVersion { get; set; }
         public int? OeRefId { get; set; }

@@ -54,6 +54,7 @@ namespace BlazorFullStackCrud.Server.Controllers
 
             dbData.MaterialCategoryId = formData.MaterialCategoryId;
             dbData.MaterialCategoryName = formData.MaterialCategoryName;
+            dbData.Notes = formData.Notes;
 
             await _context.SaveChangesAsync();
 
