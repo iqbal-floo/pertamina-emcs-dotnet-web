@@ -21,6 +21,12 @@
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Vendor> Vendors { get; set; }
 
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+
+        }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BusinessUnit>(entity => entity.ToTable("EmcsMsBusinessUnit"));

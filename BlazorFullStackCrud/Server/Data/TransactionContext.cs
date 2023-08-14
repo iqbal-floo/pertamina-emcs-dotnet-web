@@ -15,6 +15,11 @@
         public DbSet<OeJobsType> OeJobsTypes { get; set; }
         public DbSet<OeReviewer> OeReviewers { get; set; }
 
+        public TransactionContext(DbContextOptions<TransactionContext> options) : base(options)
+        {
+
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<TrFile>(entity => entity.ToTable("EmcsTrFile"));

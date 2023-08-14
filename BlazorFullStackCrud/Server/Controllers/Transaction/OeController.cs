@@ -61,7 +61,7 @@ namespace BlazorFullStackCrud.Server.Controllers
             dbData.OeTitle = formData.OeTitle;
             dbData.CityId = formData.CityId;
             dbData.BusinessUnitId = formData.BusinessUnitId;
-            dbData.MataAnggaran = formData.MataAnggaran;
+            dbData.CostCenter = formData.CostCenter;
             dbData.OeType = formData.OeType;
             dbData.OeJobsTypeId = formData.OeJobsTypeId;
             dbData.OeWo = formData.OeWo;

@@ -16,7 +16,7 @@ namespace BlazorFullStackCrud.Shared
         public string? MaterialSpecification { get; set; } = string.Empty;
         public string? MaterialUom { get; set; } = string.Empty;
         public decimal? MaterialPrice { get; set; }
-        public DateOnly? MaterialQuotationDate { get; set; }
+        public DateTime? MaterialQuotationDate { get; set; }
         public string? MaterialBrand { get; set; } = string.Empty;
         public double? Tkdn { get; set; } = 0;
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,12 @@ namespace BlazorFullStackCrud.Shared
 {
     public class TrFile
     {
-        
+        [Key]
         public int FileId { get; set; }
         public string? FileName { get; set; } = string.Empty;
         public string? FileDirectory { get; set; } = string.Empty;
         public string? FileRelationTable { get; set; } = string.Empty;
-        public DateOnly? FileDate { get; set; }
+        public DateTime? FileDate { get; set; }
 
         public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }

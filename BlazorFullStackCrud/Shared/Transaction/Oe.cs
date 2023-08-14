@@ -22,7 +22,7 @@ namespace BlazorFullStackCrud.Shared
         public string? OeWo { get; set; } = string.Empty;
         public int? OeVersion { get; set; }
         public int? OeRefId { get; set; }
-        public DateOnly? OeDate { get; set; }
+        public DateTime? OeDate { get; set; }
         public int? OePeriodYear { get; set; }
         public int? OePeriodMonth { get; set; }
         public int? OePeriodDay { get; set; }

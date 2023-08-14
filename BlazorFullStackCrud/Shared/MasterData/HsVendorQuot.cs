@@ -12,7 +12,7 @@ namespace BlazorFullStackCrud.Shared
         public int HsVendorQuotId { get; set; }
         public int MaterialId { get; set; }
         public double? QuotPrice { get; set; }
-        public DateOnly? QuotDate { get; set; }
+        public DateTime? QuotDate { get; set; }
         public int HsVendorId { get; set; }
         public HsVendor? HsVendor { get; set; }
         public int FileId { get; set; }

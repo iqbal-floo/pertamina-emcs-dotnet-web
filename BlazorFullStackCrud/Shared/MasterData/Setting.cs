@@ -11,7 +11,7 @@ namespace BlazorFullStackCrud.Shared
         
         public int SettingId { get; set; }
         public string? SettingName { get; set; } = string.Empty;
-        public DateOnly? ValidDate { get; set; }
+        public DateTime? ValidDate { get; set; }
 
         public string? Notes { get; set; } = string.Empty;
         public byte? IsPublish { get; set; }
